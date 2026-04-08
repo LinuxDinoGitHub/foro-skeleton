@@ -1,4 +1,7 @@
-// Props passed from the parent component
+// READY FOR DEPLOYMENT //
+// READY FOR DEPLOYMENT //
+// READY FOR DEPLOYMENT //
+// READY FOR DEPLOYMENT //
 
 export interface HeroWelcomeProps {
   titleFirstLine?: string;
@@ -131,4 +134,4 @@ export default function LandingHero({
   );
 }
 
-// Button colors need to be fixed 
+// READY FOR DEPLOYMENT //

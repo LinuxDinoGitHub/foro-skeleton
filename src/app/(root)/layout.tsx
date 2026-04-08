@@ -1,4 +1,5 @@
 import { EB_Garamond, Space_Grotesk } from "next/font/google";
+import Navbar from "@/src/layout/Navbar"
 
 const ebGaramond = EB_Garamond({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function TestingPageLayout({
     <div
       className={`${ebGaramond.variable} ${spaceGrotesk.variable} min-h-screen`}
     >
+      <Navbar />
       {children}
     </div>
   );
