@@ -3,6 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #ffffff;
+
+  /* brand colors */ 
+
+  --color-brand-accent: #834A4A;
+  --color-olive : #4B4B30;
+  --color-mauve : #834A4A;
+
+
 }
 
 @theme inline {

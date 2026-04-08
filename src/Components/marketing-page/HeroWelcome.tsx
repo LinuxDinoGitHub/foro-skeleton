@@ -1,3 +1,5 @@
+// Props passed from the parent component
+
 export interface HeroWelcomeProps {
   titleFirstLine?: string;
   titleSecondLine?: string;
@@ -23,8 +25,8 @@ export default function LandingHero({
   subtitle = "A centralised solution to finding competitions in fields of your interest and like-minded teammates.",
   signUpHref = "src/app/auth/signup-page",
   logInHref = "src/app/auth/login-page",
-  linkedInHref = "#",
-  instagramHref = "#",
+  linkedInHref = "https://www.linkedin.com/company/il-foro1/",
+  instagramHref = "https://www.instagram.com/ilforo.web/",
 }: HeroWelcomeProps) {
   return (
     <section
@@ -78,7 +80,7 @@ export default function LandingHero({
           {/* Log In — bg #834A4A, border 1px solid #000, border-radius 23.56px, py 23px */}
           <a
             href={logInHref}
-            className="flex items-center justify-center rounded-[23px] border border-black bg-(--color-mauve) py-[23px] px-9 text-[clamp(1rem,3.3vw,2.04rem)] font-medium text-(--color-cream) transition-all duration-200 hover:bg-[#6e3c3c] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f0ead8] focus-visible:ring-offset-2 sm:w-[311px]"
+            className="flex items-center justify-center rounded-[23px] border border-black bg-(--color-mauve) py-[23px] px-9 text-[clamp(1rem,3.3vw,2.04rem)] font-medium text-(--color-cream) transition-all duration-200 hover:bg-[#653A3A] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f0ead8] focus-visible:ring-offset-2 sm:w-[311px]"
             style={groteskStyle}
             aria-label="Log in to Il Foro"
           >
