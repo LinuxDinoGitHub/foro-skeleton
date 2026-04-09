@@ -4,14 +4,12 @@
   --background: #ffffff;
   --foreground: #ffffff;
 
-  /* brand colors */ 
+  /* brand colors */
 
-  --color-brand-accent: #834A4A;
-  --color-olive: #4B4B30;
-  --color-mauve: #834A4A;
+  --color-brand-accent: #834a4a;
+  --color-olive: #4b4b30;
+  --color-mauve: #834a4a;
   --color-cream: #f0ead8;
-
-
 }
 
 @theme inline {
@@ -19,6 +17,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --size-7_5xl: 88rem;
 }
 
 @media (prefers-color-scheme: dark) {

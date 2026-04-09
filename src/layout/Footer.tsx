@@ -28,7 +28,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-cream">
-      <div className="mx-auto flex max-w-[1440px] flex-col justify-start gap-25 px-[92px] py-10 md:flex-row">
+      <div className="mx-auto flex max-w-[1440px] flex-col justify-start gap-25 px-[30px] py-10 md:flex-row">
         {/* Left Column */}
         <div className="flex flex-col items-start gap-4">
           <button
@@ -41,7 +41,7 @@ export default function Footer() {
               alt="Il Foro Logo"
               width={400}
               height={200}
-              className="h-[200px] w-auto object-contain object-left"
+              className="h-auto w-auto object-contain object-left"
             />
           </button>
 
