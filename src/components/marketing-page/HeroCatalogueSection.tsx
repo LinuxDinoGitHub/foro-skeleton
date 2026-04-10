@@ -18,29 +18,39 @@ export default function HeroCatalogueSection() {
           lineHeight: 0.94,
           fontWeight: 500,
           color: "#000000",
-          paddingLeft: "clamp(24px, 6.53vw, 94px)",
-          paddingRight: "clamp(24px, 5.83vw, 84px)",
+          textAlign: "center",
+          paddingLeft: "clamp(24px, 3vw, 48px)",
+          paddingRight: "clamp(24px, 3vw, 48px)",
           paddingTop: "clamp(32px, 3.47vw, 50px)",
-          marginBottom: "clamp(16px, 1.39vw, 20px)",
+          marginBottom: "clamp(24px, 2.5vw, 36px)",
         }}
       >
         {/* "Il Foro" — italic, brand accent colour */}
-        <em style={{ color: "var(--color-brand-accent)" }}>Il Foro</em>
+        <em
+          style={{ color: "var(--color-cream, #f0ead8)", fontStyle: "italic" }}
+        >
+          Il Foro
+        </em>
         {
-          " has a near endless catalogue of competitions and oppurtunities for you to seize"
+          " has a near endless catalogue of competitions and opportunities for you to seize"
         }
       </h2>
 
-      {/* Competition cards image — intentionally overflows both sides */}
-      <div className="relative w-full overflow-hidden" aria-hidden="true">
+      {/* Competition cards image */}
+      <div
+        className="relative w-full overflow-hidden flex justify-center"
+        aria-hidden="true"
+      >
         <img
           src="/marketing-page-assets/HeroCatalogue-assets/competition-cards.svg"
-          alt="A row of competition cards including VEX Robotics, John Locke Essay, Cambridge Rethink Essay, PolyU Business Case, and Blue Ocean Competition 2025"
+          alt="A row of competition cards"
           style={{
-            width: "clamp(1200px, 119vw, 1714px)",
+            // Increased the base pixel width and the vw percentage drastically
+            // to force the edge cards off the screen.
+            // Tweak the "160vw" up to 180vw if you want even MORE clipping.
+            width: "clamp(1800px, 160vw, 4000px)",
             maxWidth: "none",
             display: "block",
-            marginInline: "auto",
           }}
           loading="lazy"
           decoding="async"

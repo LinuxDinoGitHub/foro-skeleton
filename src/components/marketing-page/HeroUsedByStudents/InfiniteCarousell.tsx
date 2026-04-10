@@ -12,8 +12,8 @@ export default function InfiniteCarousel() {
         className="flex min-w-max"
         style={{
           animation: "infinite-scroll 30s linear infinite",
-          gap: "10px",
-          paddingRight: "10px",
+          gap: "20px",
+          paddingRight: "20px",
         }}
       >
         {UNIVERSITY_LOGOS.map((logo) => (
@@ -21,7 +21,7 @@ export default function InfiniteCarousel() {
             key={`${logo.id}-1`}
             className="flex-none flex items-center justify-center"
             style={{
-              minWidth: "420px",
+              minWidth: "400px",
               height: "400px",
             }}
           >
@@ -48,8 +48,8 @@ export default function InfiniteCarousel() {
         aria-hidden="true"
         style={{
           animation: "infinite-scroll 30s linear infinite",
-          gap: "10px",
-          paddingRight: "10px",
+          gap: "20px",
+          paddingRight: "20px",
         }}
       >
         {UNIVERSITY_LOGOS.map((logo) => (
@@ -57,7 +57,7 @@ export default function InfiniteCarousel() {
             key={`${logo.id}-2`}
             className="flex-none flex items-center justify-center"
             style={{
-              minWidth: "420px",
+              minWidth: "400px",
               height: "400px",
             }}
           >

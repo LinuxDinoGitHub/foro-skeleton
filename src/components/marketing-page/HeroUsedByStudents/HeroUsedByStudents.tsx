@@ -21,7 +21,7 @@ export default function HerousedByStudents() {
             paddingLeft: "clamp(40px, 6.53vw, 94px)",
             paddingRight: "clamp(24px, 5.83vw, 84px)",
             paddingBottom: "clamp(60px, 10.97vw, 158px)",
-            gap: "clamp(10px, 1.39vw, 20px)",
+            gap: "clamp(5px, 0.7vw, 10px)",
           }}
         >
           {/* Heading: "Used By Students At" */}
