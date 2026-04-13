@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/Link"
+import Link from "next/link";
 
 export interface HeroWelcomeProps {
   titleFirstLine?: string;
@@ -11,15 +11,6 @@ export interface HeroWelcomeProps {
   linkedInHref?: string;
   instagramHref?: string;
 }
-
-const garamondStyle: React.CSSProperties = {
-  fontFamily: "var(--font-eb-garamond, 'EB Garamond', Georgia, serif)",
-};
-
-const groteskStyle: React.CSSProperties = {
-  fontFamily:
-    "var(--font-space-grotesk, 'Space Grotesk', system-ui, sans-serif)",
-};
 
 export default function HeroWelcome({
   titleFirstLine = "Welcome to",
@@ -35,27 +26,17 @@ export default function HeroWelcome({
       className="flex min-h-screen w-full flex-col items-center justify-center px-6 py-16 text-center"
       aria-label="Il Foro hero"
     >
-      {/* Max-width container matching Figma frame (965px), gap ≈ 54px from element-box calc */}
       <div className="flex w-full max-w-[965px] flex-col items-center gap-[54px]">
         {/* Title — font-weight 500 per Figma spec */}
-        <h1
-          className="w-full text-[clamp(2.5rem,12vw,7.25rem)] font-medium leading-[0.94]"
-          style={garamondStyle}
-        >
+        <h1 className="w-full text-[clamp(2.5rem,12vw,7.25rem)] font-medium leading-[0.94] font-garamond">
           <span className="block text-black">{titleFirstLine}</span>
-          <span
-            className="block italic"
-            style={{ color: "var(--color-brand-accent)" }}
-          >
+          <span className="block italic text-brand-accent">
             {titleSecondLine}
           </span>
         </h1>
 
         {/* Subtitle — 32.62px at design width, scales down on mobile */}
-        <p
-          className="text-[clamp(1rem,3.3vw,2.04rem)] font-medium leading-[1.3] text-black"
-          style={groteskStyle}
-        >
+        <p className="text-[clamp(1rem,3.3vw,2.04rem)] font-medium leading-[1.3] text-black font-space-grotesk">
           {subtitle}
         </p>
 
@@ -64,8 +45,7 @@ export default function HeroWelcome({
           {/* Sign Up — bg #4B4B30, border 1px solid #000, border-radius 22.65px, py 23px */}
           <Link
             href={signUpHref}
-            className="group flex items-center justify-center gap-[9px] rounded-[23px] border border-black bg-(--color-olive) py-[23px] px-9 text-[clamp(1rem,3.3vw,2.04rem)] font-medium text-(--color-cream) transition-all duration-200 hover:bg-[#3a3a22] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f0ead8] focus-visible:ring-offset-2 sm:w-[311px]"
-            style={groteskStyle}
+            className="group flex items-center justify-center gap-[9px] rounded-[23px] border border-black bg-olive py-[23px] px-9 text-[clamp(1rem,3.3vw,2.04rem)] font-medium text-cream font-space-grotesk transition-all duration-200 hover:bg-[#3a3a22] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f0ead8] focus-visible:ring-offset-2 sm:w-[311px]"
             aria-label="Sign up for Il Foro"
           >
             <span>Sign Up</span>
@@ -82,8 +62,7 @@ export default function HeroWelcome({
           {/* Log In — bg #834A4A, border 1px solid #000, border-radius 23.56px, py 23px */}
           <Link
             href={logInHref}
-            className="flex items-center justify-center rounded-[23px] border border-black bg-(--color-mauve) py-[23px] px-9 text-[clamp(1rem,3.3vw,2.04rem)] font-medium text-(--color-cream) transition-all duration-200 hover:bg-[#653A3A] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f0ead8] focus-visible:ring-offset-2 sm:w-[311px]"
-            style={groteskStyle}
+            className="flex items-center justify-center rounded-[23px] border border-black bg-mauve py-[23px] px-9 text-[clamp(1rem,3.3vw,2.04rem)] font-medium text-cream font-space-grotesk transition-all duration-200 hover:bg-[#653A3A] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f0ead8] focus-visible:ring-offset-2 sm:w-[311px]"
             aria-label="Log in to Il Foro"
           >
             Log In
@@ -132,4 +111,3 @@ export default function HeroWelcome({
     </section>
   );
 }
-
