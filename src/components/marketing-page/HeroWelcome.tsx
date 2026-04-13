@@ -1,10 +1,6 @@
-// READY FOR DEPLOYMENT //
-// READY FOR DEPLOYMENT //
-// READY FOR DEPLOYMENT //
-// READY FOR DEPLOYMENT //
-
 import React from "react";
 import Image from "next/image";
+import Link from "next/Link"
 
 export interface HeroWelcomeProps {
   titleFirstLine?: string;
@@ -66,7 +62,7 @@ export default function HeroWelcome({
         {/* CTA Buttons — each 310.78px wide, gap 37.15px */}
         <div className="flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center sm:gap-[37px]">
           {/* Sign Up — bg #4B4B30, border 1px solid #000, border-radius 22.65px, py 23px */}
-          <a
+          <Link
             href={signUpHref}
             className="group flex items-center justify-center gap-[9px] rounded-[23px] border border-black bg-(--color-olive) py-[23px] px-9 text-[clamp(1rem,3.3vw,2.04rem)] font-medium text-(--color-cream) transition-all duration-200 hover:bg-[#3a3a22] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f0ead8] focus-visible:ring-offset-2 sm:w-[311px]"
             style={groteskStyle}
@@ -81,17 +77,17 @@ export default function HeroWelcome({
               aria-hidden="true"
               className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             />
-          </a>
+          </Link>
 
           {/* Log In — bg #834A4A, border 1px solid #000, border-radius 23.56px, py 23px */}
-          <a
+          <Link
             href={logInHref}
             className="flex items-center justify-center rounded-[23px] border border-black bg-(--color-mauve) py-[23px] px-9 text-[clamp(1rem,3.3vw,2.04rem)] font-medium text-(--color-cream) transition-all duration-200 hover:bg-[#653A3A] hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f0ead8] focus-visible:ring-offset-2 sm:w-[311px]"
             style={groteskStyle}
             aria-label="Log in to Il Foro"
           >
             Log In
-          </a>
+          </Link>
         </div>
 
         {/* Social Links — gap 22.65px */}
@@ -100,7 +96,7 @@ export default function HeroWelcome({
           role="list"
           aria-label="Social media links"
         >
-          <a
+          <Link
             href={linkedInHref}
             target="_blank"
             rel="noopener noreferrer"
@@ -114,9 +110,9 @@ export default function HeroWelcome({
               width={40}
               height={38}
             />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href={instagramHref}
             target="_blank"
             rel="noopener noreferrer"
@@ -130,11 +126,10 @@ export default function HeroWelcome({
               width={40}
               height={40}
             />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
   );
 }
 
-// READY FOR DEPLOYMENT //
