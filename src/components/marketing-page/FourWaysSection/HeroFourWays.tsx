@@ -1,9 +1,5 @@
 import React from "react";
 
-const garamondStyle: React.CSSProperties = {
-  fontFamily: "var(--font-eb-garamond, 'EB Garamond', Georgia, serif)",
-};
-
 const ASSETS = {
   competitionCards:
     "/marketing-page-assets/FourWays-assets/Easy%20to%20read%20competition%20cards.png",
@@ -21,16 +17,7 @@ const shadowClass =
 export default function HeroFourWays() {
   return (
     <section
-      className="relative w-full min-h-screen overflow-hidden px-4 py-6 sm:px-8 md:px-12 lg:px-20"
-      // Added a background color that mimics the Figma tone.
-      // Update the url() below with your actual painting background asset!
-      style={{
-        backgroundColor: "#E4DDCB",
-        backgroundImage:
-          "url('/marketing-page-assets/bg-painting-placeholder.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative w-full min-h-screen overflow-hidden px-4 py-6 sm:px-8 md:px-12 lg:px-20 bg-[#E4DDCB] bg-[url('/marketing-page-assets/bg-painting-placeholder.jpg')] bg-cover bg-center"
       aria-labelledby="four-ways-heading"
     >
       {/* Optional overlay to soften the background image if needed */}
@@ -40,17 +27,11 @@ export default function HeroFourWays() {
         {/* Section Heading */}
         <h2
           id="four-ways-heading"
-          className="mb-12 text-left text-[clamp(2.5rem,5vw,4.8rem)] font-medium leading-[1.05] text-black md:mb-20"
-          style={garamondStyle}
+          className="mb-12 text-left text-[clamp(2.5rem,5vw,4.8rem)] font-medium leading-[1.05] text-black md:mb-20 font-garamond"
         >
-            Four ways {" "} 
-          <span
-            className="italic text-mauve"
-          >
-            Il Foro
-          </span>{" "}
-          makes it easier to find
-          <br /> <span className="text-mauve">academic competitions </span>
+          Four ways <span className="italic text-mauve">Il Foro</span> makes it
+          easier to find
+          <br /> <span className="text-mauve">academic competitions</span>
         </h2>
 
         {/* 2-Column Staggered Grid */}
@@ -62,8 +43,7 @@ export default function HeroFourWays() {
                 src={ASSETS.competitionCards}
                 alt="Easy to read competition cards"
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ width: "100%", height: "auto" }}
-                className={shadowClass}
+                className={`w-full h-auto ${shadowClass}`}
               />
             </div>
             <div className="w-full relative">
@@ -71,8 +51,7 @@ export default function HeroFourWays() {
                 src={ASSETS.searchFilters}
                 alt="Narrow it down. Win it now."
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ width: "100%", height: "auto" }}
-                className={shadowClass}
+                className={`w-full h-auto ${shadowClass}`}
               />
             </div>
           </div>
@@ -84,8 +63,7 @@ export default function HeroFourWays() {
                 src={ASSETS.aggregator}
                 alt="A competition aggregator that is personalised."
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ width: "100%", height: "auto" }}
-                className={shadowClass}
+                className={`w-full h-auto ${shadowClass}`}
               />
             </div>
             <div className="w-full relative">
@@ -93,8 +71,7 @@ export default function HeroFourWays() {
                 src={ASSETS.locationMap}
                 alt="Find and win competitions in your backyard."
                 sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ width: "100%", height: "auto" }}
-                className={shadowClass}
+                className={`w-full h-auto ${shadowClass}`}
               />
             </div>
           </div>
