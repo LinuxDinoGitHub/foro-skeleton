@@ -25,7 +25,11 @@ export default function Footer() {
       <div className="mx-auto flex max-w-screen-2xl flex-col justify-start gap-24 px-8 py-10 md:flex-row">
         {/* Left Column */}
         <div className="flex flex-col items-start gap-4">
-          <Link href="#" aria-label="Scroll to top" className="transition-opacity hover:opacity-80">
+          <Link
+            href="#"
+            aria-label="Scroll to top"
+            className="transition-opacity hover:opacity-80"
+          >
             <Image
               src="/marketing-page-assets/il-foro-logo-no-padding.png"
               alt="Il Foro Logo"
@@ -51,7 +55,7 @@ export default function Footer() {
           </p>
 
           <div className="flex items-center gap-4">
-            
+            <Link
               href="https://www.linkedin.com/company/ilforo"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,8 +68,9 @@ export default function Footer() {
                 width={32}
                 height={32}
               />
-            </a>
-            
+            </Link>
+
+            <Link
               href="https://www.instagram.com/ilforo.web/"
               target="_blank"
               rel="noopener noreferrer"
@@ -78,8 +83,9 @@ export default function Footer() {
                 width={32}
                 height={32}
               />
-            </a>
-            
+            </Link>
+
+            <Link
               href="mailto:contact@ilforo.com"
               aria-label="Email"
               className="transition-opacity hover:opacity-70"
@@ -90,7 +96,7 @@ export default function Footer() {
                 width={32}
                 height={32}
               />
-            </a>
+            </Link>
           </div>
         </div>
 
